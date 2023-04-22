@@ -11,7 +11,10 @@ namespace OopsConcepts
         static void Main(string[] args)
         {
             ClassName name= new ClassName();
-            name.MethodName();
+           // name.MethodName();
+           // name.paramiterizeMethod("Subhash Barela");
+           Constructor obj= new Constructor();
+            Console.Read();
         }
     }
 }
