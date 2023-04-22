@@ -1,0 +1,8 @@
+C:\Users\Shiva027\Desktop\BridgeLabSolution\OopsConcepts\OopsConcepts\bin\Debug\OopsConcepts.exe.config
+C:\Users\Shiva027\Desktop\BridgeLabSolution\OopsConcepts\OopsConcepts\bin\Debug\OopsConcepts.exe
+C:\Users\Shiva027\Desktop\BridgeLabSolution\OopsConcepts\OopsConcepts\bin\Debug\OopsConcepts.pdb
+C:\Users\Shiva027\Desktop\BridgeLabSolution\OopsConcepts\OopsConcepts\obj\Debug\OopsConcepts.csproj.AssemblyReference.cache
+C:\Users\Shiva027\Desktop\BridgeLabSolution\OopsConcepts\OopsConcepts\obj\Debug\OopsConcepts.csproj.SuggestedBindingRedirects.cache
+C:\Users\Shiva027\Desktop\BridgeLabSolution\OopsConcepts\OopsConcepts\obj\Debug\OopsConcepts.csproj.CoreCompileInputs.cache
+C:\Users\Shiva027\Desktop\BridgeLabSolution\OopsConcepts\OopsConcepts\obj\Debug\OopsConcepts.exe
+C:\Users\Shiva027\Desktop\BridgeLabSolution\OopsConcepts\OopsConcepts\obj\Debug\OopsConcepts.pdb
