@@ -6,15 +6,29 @@ using System.Threading.Tasks;
 
 namespace OopsConcepts
 {
-    public class Program
+    // Base Class
+    public class ClassA
     {
+        public void BaseClassMethod()
+        {
+            Console.WriteLine("This Is Base Class Method:..");
+        }
+    }
+
+    public class Program:ClassA
+    {
+        public void DeriveClassMethod()
+        {
+            Console.WriteLine("this is derive class method");
+        }
+
         static void Main(string[] args)
         {
-            ClassName name= new ClassName();
-           // name.MethodName();
-           // name.paramiterizeMethod("Subhash Barela");
-           Constructor obj= new Constructor("Subhash Barela");
-            Console.Read();
+            Program Obj= new Program();
+            Obj.BaseClassMethod();
+            Obj.DeriveClassMethod();
+           
+           Console.Read();
         }
     }
 }
