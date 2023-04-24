@@ -23,7 +23,7 @@ namespace OopsConcepts
         }
     }
     // Derive class 2
-    public class Program:ClassB
+    public class Program:ClassA
     {
         public void DeriveClassTwoMethod()
         {
@@ -33,13 +33,15 @@ namespace OopsConcepts
         static void Main(string[] args)
         {
             Program Obj= new Program();
-            Obj.BaseClassMethod(); // Base Class Method
-            Obj.DeriveClassOneMethod(); // Derive Class Method
-
+            Obj.BaseClassMethod(); // Base Class Method          
             Obj.DeriveClassTwoMethod();
 
+            ClassB ObjB= new ClassB();
+            ObjB.BaseClassMethod();
+            ObjB.DeriveClassOneMethod(); // Derive Class Method
 
-           Console.Read();
+
+            Console.Read();
         }
     }
 }
