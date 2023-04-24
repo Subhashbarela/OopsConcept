@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace OopsConcepts
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             ClassName name= new ClassName();
            // name.MethodName();
            // name.paramiterizeMethod("Subhash Barela");
-           Constructor obj= new Constructor();
+           Constructor obj= new Constructor("Subhash Barela");
             Console.Read();
         }
     }
