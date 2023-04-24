@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OopsConcepts
 {
-    // Base Class
+    // Base Class 
     public class ClassA
     {
         public void BaseClassMethod()
@@ -14,20 +14,31 @@ namespace OopsConcepts
             Console.WriteLine("This Is Base Class Method:..");
         }
     }
-
-    public class Program:ClassA
+    // Derive class 1
+    public class ClassB:ClassA
     {
-        public void DeriveClassMethod()
+        public void DeriveClassOneMethod()
         {
-            Console.WriteLine("this is derive class method");
+            Console.WriteLine("This Is derive Class Method:..");
+        }
+    }
+    // Derive class 2
+    public class Program:ClassB
+    {
+        public void DeriveClassTwoMethod()
+        {
+            Console.WriteLine("this is Second derive class method");
         }
 
         static void Main(string[] args)
         {
             Program Obj= new Program();
-            Obj.BaseClassMethod();
-            Obj.DeriveClassMethod();
-           
+            Obj.BaseClassMethod(); // Base Class Method
+            Obj.DeriveClassOneMethod(); // Derive Class Method
+
+            Obj.DeriveClassTwoMethod();
+
+
            Console.Read();
         }
     }
