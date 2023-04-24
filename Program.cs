@@ -10,27 +10,42 @@ namespace OopsConcepts
 
     public class Program
     {
-        public void NonParameterizeMethod()
+        public void ValueTypeMethod(int a) // this created seperate memory block for storing value
         {
-            Console.WriteLine("this is non parameteriase method");
+            a += 10;
+            Console.WriteLine(" value of a is:"+a);
         }
-        public void ParameterizeMethod(string name)
+        public void RefTypeMethod( ref int a) // this variable access address  for storing value
         {
-            Console.WriteLine("this is  parameteriase method"+ name);
+            a += 10;
+            Console.WriteLine(" value of a is:" + a);
         }
-        public static void StaticMethod()
+        public void OutTypeMethod(out int a) // this variable access address  for storing value
         {
-            Console.WriteLine("This is static method");
+            a = 10;
+            Console.WriteLine(" value of a is:" + a);
         }
+
+
+
 
 
         static void Main(string[] args)
         { 
             Program Obj= new Program();
-            Obj.NonParameterizeMethod();
-            Obj.ParameterizeMethod("subhash");
-            StaticMethod();
-          
+            int a = 5;
+            Obj.ValueTypeMethod(a); //15
+            Console.WriteLine("value of a in Main Method "+a); //5
+           
+            // Reference Type
+            int b = 5;  // send reference of this variable
+            Obj.RefTypeMethod(ref b); //15
+            Console.WriteLine("value of a in Main Method "+b); // 15
+
+            //Out parameterise
+            int c;  // send reference of this variable And no need to initialize value
+            Obj.OutTypeMethod(out c); //10
+            Console.WriteLine("value of a in Main Method " + c); // 10
 
             Console.Read();
         }
