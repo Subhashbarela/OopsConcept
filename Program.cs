@@ -6,42 +6,42 @@ using System.Threading.Tasks;
 
 namespace OopsConcepts
 {
-    // Base Class 
-    public class ClassA
+    public class Shape
     {
-        public void BaseClassMethod()
+        public virtual void draw()
         {
-            Console.WriteLine("This Is Base Class Method:..");
+            Console.WriteLine("drawing...");
         }
     }
-    // Derive class 1
-    public class ClassB:ClassA
+    public class Rectangle : Shape
     {
-        public void DeriveClassOneMethod()
+        public override void draw()
         {
-            Console.WriteLine("This Is derive Class Method:..");
+            Console.WriteLine("drawing rectangle...");
         }
     }
-    // Derive class 2
-    public class Program:ClassA
+    public class Circle : Shape
     {
-        public void DeriveClassTwoMethod()
+        public override void draw()
         {
-            Console.WriteLine("this is Second derive class method");
-        }
-
-        static void Main(string[] args)
-        {
-            Program Obj= new Program();
-            Obj.BaseClassMethod(); // Base Class Method          
-            Obj.DeriveClassTwoMethod();
-
-            ClassB ObjB= new ClassB();
-            ObjB.BaseClassMethod();
-            ObjB.DeriveClassOneMethod(); // Derive Class Method
-
-
-            Console.Read();
+            Console.WriteLine("drawing circle...");
         }
     }
+        public class Program
+        {
+
+
+            static void Main(string[] args)
+            {
+                Shape s= new Shape();
+                s.draw();
+                s = new Rectangle();
+                s.draw();
+                s = new Circle();
+                s.draw();
+
+                Console.Read();
+            }
+        }
+    
 }
