@@ -6,36 +6,37 @@ using System.Threading.Tasks;
 
 namespace OopsConcepts
 {
-    class Student
+    abstract class Animal
     {
-        private int id;
-        private string name;
-        // Creating setter and getter for each property  
-        public int ID {
-
-            set { id = value; }
-            get { return id; }
-             }
-        public string Name {
-            set { name = value; }
-            get { return name; }
-             }
-       
+        // abstract method
+        public abstract void makeSound();
     }
-
+    // inheriting from abstract class
+    class Dog : Animal
+    {
+        // provide implementation of abstract method
+        public override void makeSound()
+        {
+            Console.WriteLine(" Dog Sound..  Bark Bark");
+        }
+    }
+    class Pig : Animal
+    {
+        // provide implementation of abstract method
+        public override void makeSound()
+        {
+            Console.WriteLine(" Pig Sound..  Wee Wee");
+        }
+    }
     public class Program
-
     {
         static void Main(string[] args)
         {
-            Student student = new Student();
-            // Setting values to the properties  
-            student.ID = 101;
-            student.Name = "Mohan Ram";
-           
-            // getting values  
-            Console.WriteLine("ID = " + student.ID);
-            Console.WriteLine("Name = " + student.Name);
+            Dog bruzo = new Dog();
+            bruzo.makeSound();
+
+            Pig pig = new Pig();
+            pig.makeSound();         
            
             Console.Read();
         }
