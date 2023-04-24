@@ -6,38 +6,32 @@ using System.Threading.Tasks;
 
 namespace OopsConcepts
 {
-    abstract class Animal
-    {
-        // abstract method
-        public abstract void makeSound();
-    }
-    // inheriting from abstract class
-    class Dog : Animal
-    {
-        // provide implementation of abstract method
-        public override void makeSound()
-        {
-            Console.WriteLine(" Dog Sound..  Bark Bark");
-        }
-    }
-    class Pig : Animal
-    {
-        // provide implementation of abstract method
-        public override void makeSound()
-        {
-            Console.WriteLine(" Pig Sound..  Wee Wee");
-        }
-    }
+   
+
     public class Program
     {
-        static void Main(string[] args)
-        {
-            Dog bruzo = new Dog();
-            bruzo.makeSound();
+        public int id { get; set; }
+        public string name { get; set; }
+        public bool IsMarride { get; set; }
+        public double Heigth { get; set; }
 
-            Pig pig = new Pig();
-            pig.makeSound();         
-           
+        public void Display()
+        {
+            Console.WriteLine(" Student Id is: " + id);
+            Console.WriteLine(" StudentName is: " + name);
+            Console.WriteLine("Student Is Marride : " + IsMarride);
+            Console.WriteLine(" Student heigth is: " + Heigth);
+
+        }
+
+        static void Main(string[] args)
+        { 
+            Program Obj= new Program();
+            Obj.id = 102;
+            Obj.name = "Subhash";
+            Obj.IsMarride = false;
+            Obj.Heigth = 6.64;
+            Obj.Display();
             Console.Read();
         }
 
