@@ -6,42 +6,39 @@ using System.Threading.Tasks;
 
 namespace OopsConcepts
 {
-    public class Shape
+    class Student
     {
-        public virtual void draw()
-        {
-            Console.WriteLine("drawing...");
-        }
+        private int id;
+        private string name;
+        // Creating setter and getter for each property  
+        public int ID {
+
+            set { id = value; }
+            get { return id; }
+             }
+        public string Name {
+            set { name = value; }
+            get { return name; }
+             }
+       
     }
-    public class Rectangle : Shape
+
+    public class Program
+
     {
-        public override void draw()
+        static void Main(string[] args)
         {
-            Console.WriteLine("drawing rectangle...");
+            Student student = new Student();
+            // Setting values to the properties  
+            student.ID = 101;
+            student.Name = "Mohan Ram";
+           
+            // getting values  
+            Console.WriteLine("ID = " + student.ID);
+            Console.WriteLine("Name = " + student.Name);
+           
+            Console.Read();
         }
+
     }
-    public class Circle : Shape
-    {
-        public override void draw()
-        {
-            Console.WriteLine("drawing circle...");
-        }
-    }
-        public class Program
-        {
-
-
-            static void Main(string[] args)
-            {
-                Shape s= new Shape();
-                s.draw();
-                s = new Rectangle();
-                s.draw();
-                s = new Circle();
-                s.draw();
-
-                Console.Read();
-            }
-        }
-    
 }
