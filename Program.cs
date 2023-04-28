@@ -6,33 +6,28 @@ using System.Threading.Tasks;
 
 namespace OopsConcepts
 {
-   
-
-    public class Program
-    {
-        public int id { get; set; }
-        public string name { get; set; }
-        public bool IsMarride { get; set; }
-        public double Heigth { get; set; }
-
-        public void Display()
-        {
-            Console.WriteLine(" Student Id is: " + id);
-            Console.WriteLine(" StudentName is: " + name);
-            Console.WriteLine("Student Is Marride : " + IsMarride);
-            Console.WriteLine(" Student heigth is: " + Heigth);
-
-        }
-
-        static void Main(string[] args)
+   public class Program
+    {      
+       static void Main(string[] args)
         { 
-            Program Obj= new Program();
-            Obj.id = 102;
-            Obj.name = "Subhash";
-            Obj.IsMarride = false;
-            Obj.Heigth = 6.64;
-            Obj.Display();
-            Console.Read();
+           ClassName name = new ClassName();
+            // name.MethodName();
+            // name.paramiterizeMethod("Subhash Barela");
+
+            // ReturnType rtype= new ReturnType();
+            //rtype.MethodType(1);
+            //int val=Obj.IntMethodType(4,5);
+            //Console.WriteLine(val);
+            //Console.WriteLine(rtype.DoubleMethodType(4.5,6.7));
+            //Console.WriteLine(rtype.StringMethodType());
+            //Console.WriteLine(rtype.BoolMethodType(10));
+
+            VariableTypes vr= new VariableTypes();
+            vr.id = 102;
+            vr.name = "Subhash";
+            vr.IsMarride = false;
+            vr.Heigth = 6.64;
+            vr.Display();
         }
 
     }
