@@ -12,14 +12,18 @@ namespace OopsConcepts
     {
         static void Main(string[] args)
         {
-            Student student = new Student();
-            // Setting values to the properties  
-            student.ID = 101;
-            student.Name = "Mohan Ram";
-           
-            // getting values  
-            Console.WriteLine("ID = " + student.ID);
-            Console.WriteLine("Name = " + student.Name);
+            //Property........
+            //EncapsulatioUsinProperty encap= new EncapsulatioUsinProperty();
+           // encap.Name = "subhash";
+            //encap.ID = 102;
+            //Console.WriteLine("name is: "+encap.Name);
+           // Console.WriteLine("name is: " + encap.ID);
+
+            // Encapsulation encp= new Encapsulation();
+            // encp.id = -101;      
+            // encp.name = "Mohan Ram";                   
+            // encp.SetData(102,"subhash");
+            // encp.GetData();
            
             Console.Read();
         }
