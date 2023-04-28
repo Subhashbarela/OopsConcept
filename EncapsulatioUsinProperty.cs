@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Encapsulation
 {
-    public class EncapsulatioUsinProperty
+    public class OopsConcepts
     {
         private int id=102;
         private string name;         
