@@ -13,7 +13,7 @@ namespace OopsConcepts
             MethodType Obj= new MethodType();
             Obj.NonParameterizeMethod();
             Obj.ParameterizeMethod("subhash");
-            StaticMethod();
+            MethodType.StaticMethod(); // Access the Static Method So no need to create object of this class
           
 
             Console.Read();
