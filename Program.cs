@@ -8,6 +8,7 @@ namespace OopsConcepts
 {
     class Student
     {
+        //making variable as private to protect variable from outside of the class
         private int id;
         private string name;
         // Creating setter and getter for each property  
