@@ -10,7 +10,7 @@ namespace OopsConcepts
     {
        static void Main(string[] args)
         { 
-            Program Obj= new Program();
+            MethodType Obj= new MethodType();
             Obj.NonParameterizeMethod();
             Obj.ParameterizeMethod("subhash");
             StaticMethod();
