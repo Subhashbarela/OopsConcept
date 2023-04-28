@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace OopsConcepts
 {
-   
-
-    public class Program
+   public class Program
     {
         public void ValueTypeMethod(int a) // this created seperate memory block for storing value
         {
