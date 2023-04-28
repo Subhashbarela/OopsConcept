@@ -6,30 +6,8 @@ using System.Threading.Tasks;
 
 namespace OopsConcepts
 {
-    public class Shape
-    {
-        public virtual void draw()
+           public class Program
         {
-            Console.WriteLine("drawing...");
-        }
-    }
-    public class Rectangle : Shape
-    {
-        public override void draw()
-        {
-            Console.WriteLine("drawing rectangle...");
-        }
-    }
-    public class Circle : Shape
-    {
-        public override void draw()
-        {
-            Console.WriteLine("drawing circle...");
-        }
-    }
-        public class Program
-        {
-
 
             static void Main(string[] args)
             {
